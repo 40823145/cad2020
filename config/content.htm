@@ -13,3 +13,36 @@
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
+<h1>課堂內容</h1>
+<h2>W1</h2>
+<p>概要:介紹課程，複習大一內容，可攜系統製作</p>
+<h4>可攜系統製作:</h4>
+<p>下載fall2020_cp.7z壓縮檔，解壓縮</p>
+<p></p>
+<p>從Git網站下載PortableGit，解壓縮放入data中<span>PortableGit資料夾</span></p>
+<p><span></span></p>
+<p>修改start中git路徑</p>
+<p><img alt="" height="232" src="/images/start.png" width="562"/></p>
+<p>設定gitconfig</p>
+<p><img alt="" height="66" src="/images/config user.png" width="308"/></p>
+<p></p>
+<p>儲存後重新啟動</p>
+<p></p>
+<p>git clone自己倉儲的網址</p>
+<p></p>
+<p>進入github創建cad2020倉儲</p>
+<p></p>
+<p>cad2020資料夾創建cmsimde資料夾(黑窗)</p>
+<p>git submodule add <a href="https://github.com">https://github.com</a>/mdecourse/cmsimde.git</p>
+<p></p>
+<p>複製cmsimde中up_dir資料夾內容至cad2020，不取代重複檔案</p>
+<p></p>
+<p>下在網站需要的模組(黑窗)</p>
+<p>pip install flask flask_cors lxml bs4 markdown pelican leo </p>
+<p></p>
+<p>進入cmimde，wsgi.py啟動動態網頁localhost9443</p>
+<p></p>
+<p>補充:</p>
+<p>pip list:查看已安裝模組</p>
+<p>git version:查看git版本</p>
+<p></p>
