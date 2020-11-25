@@ -133,11 +133,24 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='課堂內容.html'>Next</a> >> 課堂內容<br /><h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<br />About << <a href='About.html'>Previous</a> <a href='課堂內容.html'>Next</a> >> 課堂內容</div>
+    <div id="tipue_search_content">w9 << <a href='w9.html'>Previous</a> <a href='小組會議.html'>Next</a> >> 小組會議<br /><h1>w10</h1>
+<p>建立小組倉儲:</p>
+<p><a href="https://github.com/mdecourse/cmstemplate">https://github.com/mdecourse/cmstemplate</a></p>
+<p>使用此github page，點擊右上角綠色Ues this template創建倉儲</p>
+<p>將倉儲clone下來</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">git clone --recurse-submodules https://github.com/40823145/cad2020ag1.git</pre>
+<p>clone結束後啟動近端</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">cd tmp
+cd cad2020ag1
+cd cmsimde
+python wsgi.py</pre>
+<p>會得到https://[::]:9443的近端</p>
+<p></p>
+<p>在Windos中搜尋cmd開啟Command Prompt，輸入ipconfig /all</p>
+<p><img alt="" height="471" src="./../images/ip.png" width="387"/></p>
+<p>複製<span style="color: #ff0000;">ip</span>位置，在瀏覽器搜尋https://localhost:9443，將localhost改成[<span style="color: #ff0000;">ip</span>]</p>
+<p>兩個網頁的內容會是相同的</p>
+<br />w9 << <a href='w9.html'>Previous</a> <a href='小組會議.html'>Next</a> >> 小組會議</div>
         
     <!-- footer -->
       <div class="container">
