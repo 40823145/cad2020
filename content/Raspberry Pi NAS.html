@@ -133,8 +133,18 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W4 << <a href='W4.html'>Previous</a> <a href='W6.html'>Next</a> >> W6<br /><h1>W5</h1>
-<br />W4 << <a href='W4.html'>Previous</a> <a href='W6.html'>Next</a> >> W6</div>
+    <div id="tipue_search_content">指令 << <a href='指令.html'>Previous</a> <br /><h1>Raspberry Pi NAS</h1>
+<p>材料:Raspberry pi、SD card、硬碟</p>
+<p>Step1:在<a href="https://www.raspberrypi.org/software/">Raspberrypi <span lang="en">Official website</span></a><span lang="en">下載Imager燒錄或下載ISO檔自行燒錄，燒錄完成後新增ssh文件(無副檔名)，複製進SD card的boot中，退出SD card插入樹莓派接上網路線開機</span></p>
+<p><span lang="en"><img alt="" height="394" src="./../images/RPI IMAGER.png" width="798"/></span></p>
+<p><span lang="en">Step2:在路由器中搜尋樹莓派ip(若在樹梅派中找ip輸入ifconfig)，使用putty ssh輸入樹莓派ip連接<br/></span></p>
+<p><span lang="en">Step3:登入樹莓派(預設帳號:pi 密碼:raspberry)，登入後update upgrade，升級完成安裝NAS系統openmediavault，安裝完成ip可能會改變，需再查詢一次ip</span></p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">sudo apt update
+sudo apt upgrade
+sudo wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
+</pre>
+<p><span lang="en">Step4:在電腦的瀏覽器輸入查詢到的ip(若無法進入，試試其他瀏覽器)，登入openmediavault(預設帳號:admin 密碼:openmediavault)，硬碟樹莓派，完成</span></p>
+<p><span lang="en"></span></p><br />指令 << <a href='指令.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
