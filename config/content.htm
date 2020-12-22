@@ -4,7 +4,8 @@
 <p>小組倉儲:<a href="https://github.com/40823145/cad2020ag1" title="githubag1"><img caption="false" height="50" src="/images/AG1.png" width="50"/></a></p>
 <p>小組網站:<a href="https://40823145.github.io/cad2020ag1/"><span size="5" style="font-size: x-large;">CAD2020 AG1</span></a></p>
 <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSe_9DoEZOnxBTyMaW0W_W_-jqCk6IaiO7waiLvQUqfFzuU3ig/viewform?usp=sf_link">電腦輔助設計實習自評與互評表單</a></p>
-<p><span size="5" style="font-size: x-large;">CAD2020 AG1</span></p><h1>Develop</h1>
+<p><span size="5" style="font-size: x-large;">CAD2020 AG1</span></p>
+<h1>Develop</h1>
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
@@ -200,7 +201,8 @@ command.go.*.c=$(cc) $(FileNameExt)
 <p><a href="https://pypi.org/project/pyslvs-ui/#files">Pyslvs_UI</a></p>
 <p><a href="http://www.pyslvs.com/content/index.html">使用手冊</a></p>
 <p></p>
-<p></p><h2>w9</h2>
+<p></p>
+<h2>w9</h2>
 <h2>w10</h2>
 <p>建立小組倉儲:</p>
 <p><a href="https://github.com/mdecourse/cmstemplate">https://github.com/mdecourse/cmstemplate</a></p>
@@ -248,6 +250,9 @@ python wsgi.py</pre>
 <p><strong>*將gitter聊天室加入網站</strong></p>
 <p>將群組域名放入此網站<a href="https://sidecar.gitter.im/" title="Sidecar">Sidecar</a></p>
 <p><span style="color: #808080;">&lt;script&gt;// &lt;![CDATA[</span><br/><span style="color: #808080;">((window.gitter = {}).chat = {}).options = {</span><br/><span style="color: #808080;">    room: '</span><span style="color: #ff0000;">群組域名</span><span style="color: #808080;">'</span><br/><span style="color: #808080;">  };</span><br/><span style="color: #808080;">// ]]&gt;&lt;/script&gt;</span><br/><span style="color: #808080;">&lt;script src="https://sidecar.gitter.im/dist/sidecar.v1.js"&gt;&lt;/script&gt;</span></p>
+<p><span style="color: #808080;"></span></p>
+<p><strong><span style="color: #000000;">*文字大小</span></strong></p>
+<p><span style="color: #808080;">&lt;font size="<span class="style9" style="color: #ff0000;">尺寸</span>"&gt;<span class="style18" style="color: #ff0000;">指定的文字</span>&lt;/font&gt;</span></p>
 <h1>Raspberry Pi NAS</h1>
 <p>材料:Raspberry pi、SD card、硬碟</p>
 <p>Step1:在<a href="https://www.raspberrypi.org/software/">Raspberrypi <span lang="en">Official website</span></a><span lang="en">下載Imager燒錄或下載ISO檔自行燒錄，燒錄完成後新增ssh文件(無副檔名)，複製進SD card的boot中，退出SD card插入樹莓派接上網路線開機</span></p>
@@ -259,4 +264,18 @@ sudo apt upgrade
 sudo wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
 </pre>
 <p><span lang="en">Step4:在電腦的瀏覽器輸入查詢到的ip(若無法進入，試試其他瀏覽器)，登入openmediavault(預設帳號:admin 密碼:openmediavault)，硬碟樹莓派，完成</span></p>
-<p><span lang="en"></span></p>
+<h1>VPN</h1>
+<p>1.Set up a new connection or network</p>
+<p><img alt="" height="622" src="/images/新增vpn.png" width="580"/></p>
+<p>2.Connect to a workplace<img alt="" height="425" src="/images/連線到工作地點.png" width="586"/></p>
+<p>3.Use my internet connection (VPN)</p>
+<p><img alt="" height="571" src="/images/使用網路連線到vpn.png" width="787"/></p>
+<p>4.Type the internet address to connect to</p>
+<p><img alt="" height="571" src="/images/輸入地址.png" width="787"/></p>
+<p><a href="https://www.vpngate.net/cn/">https://www.vpngate.net/cn/</a>複製位置</p>
+<p><img alt="" height="1030" src="/images/選擇位置.png" width="1920"/></p>
+<p>5.進入內容<img alt="" height="1030" src="/images/內容.png" width="960"/></p>
+<p><img alt="" height="678" src="/images/vpn內容設定.png" width="538"/></p>
+<p>進階設定</p>
+<p><img alt="" height="403" src="/images/進階內容.png" width="582"/></p>
+<p>6.完成</p>
