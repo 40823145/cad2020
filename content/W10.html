@@ -133,67 +133,26 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W4 << <a href='W4.html'>Previous</a> <a href='W8.html'>Next</a> >> W8<br /><h1>W7</h1>
-<p>1.設定Proxy:140.130.17.4  3128</p>
-<p>下載<a href="http://a.kmol.info:88/">http://a.kmol.info:88/</a>中的<a href="http://a.kmol.info:88/fall2020_v2.7z">fall2020_v2.7z</a></p>
-<p>或</p>
-<p><span>下載</span><a href="https://drive.google.com/file/d/1BdAeRF8RmekFqeYp_4gVHV6Bmcej7buR/view">cad2020_w7_tcc_gnuplot.7z</a><span>解壓縮資料夾</span></p>
+    <div id="tipue_search_content">W8 << <a href='W8.html'>Previous</a> <a href='W11.html'>Next</a> >> W11<br /><h1>W10</h1>
+<p>建立小組倉儲:</p>
+<p><a href="https://github.com/mdecourse/cmstemplate">https://github.com/mdecourse/cmstemplate</a></p>
+<p>使用此github page，點擊右上角綠色Ues this template創建倉儲</p>
+<p>將倉儲clone下來</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">git clone --recurse-submodules https://github.com/40823145/cad2020ag1.git</pre>
+<p>clone結束後啟動近端</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">cd tmp
+cd cad2020ag1
+cd cmsimde
+python wsgi.py</pre>
+<p>會得到https://[::]:9443的近端</p>
 <p></p>
-<p>2.修改start.bat</p>
-<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">set path_julia=%Disk%:\julia-1.5.2\bin;
-set path_tcc=%Disk%:\tcc\;
-set path_gnuplot=%Disk%:\gnuplot\bin;
-path=%Disk%:;%path_python%;%path_portablegit%;%path_julia%;%path_tcc%;%path_gnuplot%;%path%;</pre>
-<p>修改後stop重啟</p>
+<p>在Windos中搜尋cmd開啟Command Prompt，輸入ipconfig /all</p>
+<p><img alt="" height="471" src="./../images/ip.png" width="387"/></p>
+<p>複製<span style="color: #ff0000;">ip</span>位置，在瀏覽器搜尋https://localhost:9443，將localhost改成[<span style="color: #ff0000;">ip</span>]</p>
+<p>兩個網頁的內容會是相同的</p>
 <p></p>
-<p>3.重啟後輸入指令<span>tcc(黑窗)，得到以下</span></p>
-<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">Tiny C Compiler 0.9.27 - Copyright (C) 2001-2006 Fabrice Bellard
-Usage: tcc [options...] [-o outfile] [-c] infile(s)...
-       tcc [options...] -run infile [arguments...]
-General options:
-  -c          compile only - generate an object file
-  -o outfile  set output filename
-  -run        run compiled source
-  -fflag      set or reset (with 'no-' prefix) 'flag' (see tcc -hh)
-  -Wwarning   set or reset (with 'no-' prefix) 'warning' (see tcc -hh)
-  -w          disable all warnings
-  -v -vv      show version, show search paths or loaded files
-  -h -hh      show this, show more help
-  -bench      show compilation statistics
-  -           use stdin pipe as infile
-  @listfile   read arguments from listfile
-Preprocessor options:
-  -Idir       add include path 'dir'
-  -Dsym[=val] define 'sym' with value 'val'
-  -Usym       undefine 'sym'
-  -E          preprocess only
-Linker options:
-  -Ldir       add library path 'dir'
-  -llib       link with dynamic or static library 'lib'
-  -r          generate (relocatable) object file
-  -shared     generate a shared library/dll
-  -rdynamic   export all global symbols to dynamic linker
-  -soname     set name for shared library to be used at runtime
-  -Wl,-opt[=val]  set linker option (see tcc -hh)
-Debugger options:
-  -g          generate runtime debug info
-  -b          compile with built-in memory and bounds checker (implies -g)
-  -bt N       show N callers in stack traces
-Misc. options:
-  -x[c|a|n]   specify type of the next infile
-  -nostdinc   do not use standard system include paths
-  -nostdlib   do not link with standard crt and libraries
-  -Bdir       set tcc's private include/library dir
-  -MD         generate dependency file for make
-  -MF file    specify dependency file name
-  -m32/64     defer to i386/x86_64 cross compiler
-Tools:
-  create library  : tcc -ar [rcsv] lib.a files
-  create def file : tcc -impdef lib.dll [-v] [-o lib.def]</pre>
-<p><span>表示啟動命令搜尋路徑已經包含 y:\tcc 目錄</span></p>
-<p>4.修改 SciTE 編輯器中的 cpp.properties, 讓 Tools -&gt; Go 可以呼叫 tcc.exe 類解譯編輯器中副檔名為 .c 的 ANSI C 程式.</p>
-<p>作法為將滑鼠指向 SciTE 下拉式功能表 Options 往下點擊 Open cpp.properties 編輯設定檔案, 並且勾選 View -&gt; Line Number 在編輯器中顯示行號, 針對  476 行之後的設定修改如下:</p>
-<br />W4 << <a href='W4.html'>Previous</a> <a href='W8.html'>Next</a> >> W8</div>
+<p></p>
+<br />W8 << <a href='W8.html'>Previous</a> <a href='W11.html'>Next</a> >> W11</div>
         
     <!-- footer -->
       <div class="container">
