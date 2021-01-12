@@ -180,27 +180,7 @@ Tools:
 <p><span>表示啟動命令搜尋路徑已經包含 y:\tcc 目錄</span></p>
 <p>4.修改 SciTE 編輯器中的 cpp.properties, 讓 Tools -&gt; Go 可以呼叫 tcc.exe 類解譯編輯器中副檔名為 .c 的 ANSI C 程式.</p>
 <p>作法為將滑鼠指向 SciTE 下拉式功能表 Options 往下點擊 Open cpp.properties 編輯設定檔案, 並且勾選 View -&gt; Line Number 在編輯器中顯示行號, 針對  476 行之後的設定修改如下:</p>
-<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">ccopts=-pedantic -Os
-#cc=g++ $(ccopts) -c $(FileNameExt) -o $(FileName).o
-#ccc=gcc $(ccopts) -c $(FileNameExt) -o $(FileName).o
-cc=y:/tcc/tcc.exe -run
-ccc=y:/tcc/tcc.exe -run
- 
-make.command=make
-command.compile.*.c=$(ccc) -std=c99
-command.build.*.c=$(make.command)
-command.build.*.h=$(make.command)
-command.clean.*.c=$(make.command) clean
-command.clean.*.h=$(make.command) clean
-command.go.*.c=$(cc) $(FileNameExt)
-#command.go.*.c=./$(FileName)
-# To make the Go command both compile (if needed) and execute, use this setting:</pre>
-<h2>w8</h2>
-<p><a href="https://pypi.org/project/pyslvs-ui/#files">Pyslvs_UI</a></p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/GoHEAFM2eyg" width="560"></iframe></p>
-<p><a href="http://www.pyslvs.com/content/index.html">使用手冊</a></p>
-<p></p>
-<p></p><h2>W10</h2>
+<h2>W10</h2>
 <p>建立小組倉儲:</p>
 <p><a href="https://github.com/mdecourse/cmstemplate">https://github.com/mdecourse/cmstemplate</a></p>
 <p>使用此github page，點擊右上角綠色Ues this template創建倉儲</p>
@@ -216,7 +196,8 @@ python wsgi.py</pre>
 <p>在Windos中搜尋cmd開啟Command Prompt，輸入ipconfig /all</p>
 <p><img alt="" height="471" src="/images/ip.png" width="387"/></p>
 <p>複製<span style="color: #ff0000;">ip</span>位置，在瀏覽器搜尋https://localhost:9443，將localhost改成[<span style="color: #ff0000;">ip</span>]</p>
-<p>兩個網頁的內容會是相同的</p><h2>W11</h2>
+<p>兩個網頁的內容會是相同的</p>
+<h2>W11</h2>
 <h4>階梯上升機構</h4>
 <p>階梯框架</p>
 <p><a href="https://github.com/40823145/cad2020/raw/master/CAD%20file/Ladder/%E9%9A%8E%E6%A2%AF%E7%B5%84%E5%90%88.stl">階梯組合.stl</a></p>
@@ -228,21 +209,25 @@ python wsgi.py</pre>
 <p><img alt="" height="627" src="/images/階梯軸.png" width="842"/></p>
 <p><strong>棒球場</strong></p>
 <p><a href="https://github.com/40823145/cad2020/raw/master/CAD%20file/%E7%B5%84%E5%90%881.stl">棒球場.stl</a></p>
-<img alt="" height="753" src="/images/棒球場.png" width="1178"/>
+<p><img alt="" height="753" src="/images/棒球場.png" width="1178"/></p>
 <p></p>
 <p><strong></strong></p>
-<p><strong></strong></p><h2>W12</h2>
+<p><strong></strong></p>
+<h2>W12</h2>
 <p>螺旋上升機構</p>
 <p><img alt="" height="616" src="/images/螺旋.png" width="358"/></p>
 <p>外框</p>
 <p><img alt="" height="752" src="/images/軌道螺旋套.png" width="1178"/><br/><br/><img alt="" height="610" src="/images/盤.png" width="803"/></p>
 <p>棒球場底座</p>
-<p><a href="https://github.com/40823145/cad2020/raw/master/CAD%20file/%E6%A3%92%E7%90%83%E5%BA%95%E5%BA%A7.stl">棒球場底座.stl</a></p><h2>W14</h2>
+<p><a href="https://github.com/40823145/cad2020/raw/master/CAD%20file/%E6%A3%92%E7%90%83%E5%BA%95%E5%BA%A7.stl">棒球場底座.stl</a></p>
+<h2>W14</h2>
 <p>軌道組合(軌道不用做動的部分要同是一個零件，否則放進coppeliasim模擬會散開)</p>
-<p><img alt="" height="761" src="/images/軌道組合.png" width="1115"/></p><h2>W15</h2>
+<p><img alt="" height="761" src="/images/軌道組合.png" width="1115"/></p>
+<h2>W15</h2>
 <p><a href="https://github.com/40823145/cad2020/raw/master/CAD%20file/Ladder/%E7%B5%84%E5%90%88.ttt">軌道球.ttt</a></p>
 <p>因軌道沒有傾斜，球撞到螺旋會彈回來</p>
-<p><img alt="" height="839" src="/images/9labnJAisa.gif" width="1691"/></p><h2>W17</h2>
+<p><img alt="" height="839" src="/images/9labnJAisa.gif" width="1691"/></p>
+<h2>W17</h2>
 <p><a href="https://github.com/40823145/cad2020/raw/master/CAD%20file/Ladder/Ladder%20Final/%E7%B5%84%E5%90%882-2.ttt">軌道球.ttt (傾斜螺旋版)</a></p>
 <p><a href="https://github.com/40823145/cad2020/raw/master/CAD%20file/Ladder/Ladder%20Final/%E7%B5%84%E5%90%88.ttt">軌道球.ttt (垂直螺旋版)</a></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/K9P3C86SQtk" width="560"></iframe></p>
@@ -253,11 +238,13 @@ python wsgi.py</pre>
 <p>原先計畫是棒球與軌道同時進行，共用升降機構，但棒球回球的升降機構還須調整，所以未完成</p>
 <p><img alt="" height="452" src="/images/棒球剖面.png" width="766"/></p>
 <p></p>
-<p>零件檔案都在<a href="https://github.com/40823145/cad2020/tree/master/CAD%20file">github</a></p><h2>W18</h2>
+<p>零件檔案都在<a href="https://github.com/40823145/cad2020/tree/master/CAD%20file">github</a></p>
+<h2>W18</h2>
 <p>期末心得</p>
 <p>此次分組課程組員參與度不太夠，希望未來開會要開麥克風多發表意見。</p>
 <p>大家沒發表意見會造成只有少數發表意見的人在討論執行而已。</p>
-<p></p><h1>Meet</h1>
+<p></p>
+<h1>Meet</h1>
 <p><strong><span style="font-size: 200%;"><span style="font-family: Microsoft JhengHei;">右下角GITTER會議內容</span></span></strong></p>
 <p>W10:了解組員進度與發生的問題狀況</p>
 <p>W11:題目暫定為桌上曲棍球</p>
@@ -273,7 +260,8 @@ python wsgi.py</pre>
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js"></script>
 </p>
 <p>W17:</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/qXx-tY989D4" width="560"></iframe></p><h1>Note</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/qXx-tY989D4" width="560"></iframe></p>
+<h1>Note</h1>
 <p>proxy:</p>
 <p><img alt="" height="707" src="/images/proxy.png" width="815"/></p>
 <p>Web:<a href="/get_page/%E7%AD%86%E8%A8%98/a.kmol.info:88">a.kmol.info:88</a></p>
@@ -297,7 +285,8 @@ python wsgi.py</pre>
 <p><span style="color: #808080;">&lt;span style="font-size: <span style="color: #ff0000;">200</span>%;"&gt;<span style="color: #ff0000;">文字</span>&lt;/span&gt;</span></p>
 <p><span style="color: #808080;"></span></p>
 <p><span style="color: #808080;">*字型</span></p>
-<p><span style="color: #808080;">&lt;span style="font-family: <span style="color: #ff0000;">字型</span>;"&gt;<span style="color: #ff0000;">文字</span>&lt;/span&gt;</span></p><h1>Raspberry Pi NAS</h1>
+<p><span style="color: #808080;">&lt;span style="font-family: <span style="color: #ff0000;">字型</span>;"&gt;<span style="color: #ff0000;">文字</span>&lt;/span&gt;</span></p>
+<h1>Raspberry Pi NAS</h1>
 <p>材料:Raspberry pi、SD card、硬碟</p>
 <p>Step1:在<a href="https://www.raspberrypi.org/software/">Raspberrypi <span lang="en">Official website</span></a><span lang="en">下載Imager燒錄或下載ISO檔自行燒錄，燒錄完成後新增ssh文件(無副檔名)，複製進SD card的boot中，退出SD card插入樹莓派接上網路線開機</span></p>
 <p><span lang="en"><img alt="" height="394" src="/images/RPI IMAGER.png" width="798"/></span></p>
