@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='課堂內容.html'>課堂內容</a><ul class='dropdown'><li class='has-children'><a href='W1.html'>W1</a><ul class='dropdown'><li><a href='W1 HW.html'>W1 HW</a></li></ul><li class='has-children'><a href='W2.html'>W2</a><ul class='dropdown'><li><a href='W2 HW.html'>W2 HW</a></li></ul><li><a href='W3.html'>W3</a><li><a href='W4.html'>W4</a><li><a href='W7.html'>W7</a><li><a href='w8.html'>w8</a><li><a href='W10.html'>W10</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a><li><a href='W14.html'>W14</a><li><a href='W15.html'>W15</a><li><a href='W17.html'>W17</a><li><a href='W18.html'>W18</a></li></ul><li><a href='Meet.html'>Meet</a><li class='has-children'><a href='Note.html'>Note</a><ul class='dropdown'><li><a href='Code.html'>Code</a></li></ul><li><a href='Raspberry Pi NAS.html'>Raspberry Pi NAS</a><li><a href='VPN.html'>VPN</a></li>
+                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='課堂內容.html'>課堂內容</a><ul class='dropdown'><li class='has-children'><a href='W1.html'>W1</a><ul class='dropdown'><li><a href='W1 HW.html'>W1 HW</a></li></ul><li class='has-children'><a href='W2.html'>W2</a><ul class='dropdown'><li><a href='W2 HW.html'>W2 HW</a></li></ul><li><a href='W3.html'>W3</a><li><a href='W4.html'>W4</a><li><a href='W7.html'>W7</a><li><a href='W8.html'>W8</a><li><a href='W10.html'>W10</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a><li><a href='W14.html'>W14</a><li><a href='W15.html'>W15</a><li><a href='W17.html'>W17</a><li><a href='W18.html'>W18</a></li></ul><li><a href='Meet.html'>Meet</a><li class='has-children'><a href='Note.html'>Note</a><ul class='dropdown'><li><a href='Code.html'>Code</a></li></ul><li><a href='Raspberry Pi NAS.html'>Raspberry Pi NAS</a><li><a href='VPN.html'>VPN</a></li>
                       </ul>
                 </nav>
               </div>
@@ -133,7 +133,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W4 << <a href='W4.html'>Previous</a> <a href='w8.html'>Next</a> >> w8<br /><h1>W7</h1>
+    <div id="tipue_search_content">W4 << <a href='W4.html'>Previous</a> <a href='W8.html'>Next</a> >> W8<br /><h1>W7</h1>
 <p>1.設定Proxy:140.130.17.4  3128</p>
 <p>下載<a href="http://a.kmol.info:88/">http://a.kmol.info:88/</a>中的<a href="http://a.kmol.info:88/fall2020_v2.7z">fall2020_v2.7z</a></p>
 <p>或</p>
@@ -193,22 +193,7 @@ Tools:
 <p><span>表示啟動命令搜尋路徑已經包含 y:\tcc 目錄</span></p>
 <p>4.修改 SciTE 編輯器中的 cpp.properties, 讓 Tools -&gt; Go 可以呼叫 tcc.exe 類解譯編輯器中副檔名為 .c 的 ANSI C 程式.</p>
 <p>作法為將滑鼠指向 SciTE 下拉式功能表 Options 往下點擊 Open cpp.properties 編輯設定檔案, 並且勾選 View -&gt; Line Number 在編輯器中顯示行號, 針對  476 行之後的設定修改如下:</p>
-<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">ccopts=-pedantic -Os
-#cc=g++ $(ccopts) -c $(FileNameExt) -o $(FileName).o
-#ccc=gcc $(ccopts) -c $(FileNameExt) -o $(FileName).o
-cc=y:/tcc/tcc.exe -run
-ccc=y:/tcc/tcc.exe -run
- 
-make.command=make
-command.compile.*.c=$(ccc) -std=c99
-command.build.*.c=$(make.command)
-command.build.*.h=$(make.command)
-command.clean.*.c=$(make.command) clean
-command.clean.*.h=$(make.command) clean
-command.go.*.c=$(cc) $(FileNameExt)
-#command.go.*.c=./$(FileName)
-# To make the Go command both compile (if needed) and execute, use this setting:</pre>
-<br />W4 << <a href='W4.html'>Previous</a> <a href='w8.html'>Next</a> >> w8</div>
+<br />W4 << <a href='W4.html'>Previous</a> <a href='W8.html'>Next</a> >> W8</div>
         
     <!-- footer -->
       <div class="container">
